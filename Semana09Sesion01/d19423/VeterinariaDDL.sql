@@ -1,6 +1,6 @@
 
 
-create database if not exists Veterinaria;
+
 use Veterinaria;
 
 

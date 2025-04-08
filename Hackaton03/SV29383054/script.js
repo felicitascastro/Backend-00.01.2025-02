@@ -559,7 +559,67 @@ function numMayor(num1,num2,num3){
     }
     console.log("El factorial del numero: ", n, " es: ", factorial);
   }
+
+  function Ejercicio26(){
+    // Hacer un algoritmo en javascript para una heladería se tienen 4 tipos de empleados ordenados de la siguiente forma 
+    // con su número identificador y salario diario correspondiente:
+    //Cajero (56$/día).
+Servidor (64$/día).
+Preparador de mezclas (80$/día).
+Mantenimiento (48$/día).
   
+        let tipo,diaTrabajado,salario 
+
+       salario = 0;
+     
+         tipo=Parseint(prompt( 'Ingrese el identificador del empleado'));
+     
+         diaTrabajado= Pasreint(prompt( ''Ingrese los días trabajados'));
+    
+    Switch (tipo) {
+      case 1:
+       salario = diaTrabajado*56;
+      break;
+      case 2:
+       salario = diaTrabajado*64;
+      break
+      case 3:
+       salario = diaTrabajado*80;
+    break;
+    case  4:
+       salario =diaTrabajado*48;
+      break;
+      Default:
+             console.log("tipo no válido ");
+        }
+      Document.write('La cantidad a pagar es: '+salario);
+    }
+    
+  
+    function ejercicio27(){
+      // Hacer un algoritmo en JavaScript para calcular el resto y cociente 
+     //por medio de restas sucesivas
+
+      let dividiendo = Number(document.querySelector("#valor1").value);
+      let divisor = Number(document.querySelector("#valor2").value);
+      let contador = 0;
+      dividiendo = dividiendo - divisor
+  
+      if (divisor =0 ){
+          document.querySelector("#resultado").innerHTML="No se puede realizar la division";
+      }
+      if(divisor)
+  
+      while(dividiendo>=0){
+          contador = contador + 1;
+          dividiendo = dividiendo-divisor;
+  
+      }
+  
+      document.querySelector("#resultado").innerHTML= "El cociente de la division es "+contador+" y el resto es "+dividiendo;
+      
+  }
+
   function ejercicio28() {
     // Hacer un algoritmo en JavaScript para
     //  calcular la suma de los primeros
@@ -577,13 +637,54 @@ function numMayor(num1,num2,num3){
   
     console.log("La suma de los 100 primeros numeros es ", suma);
   }
-  function ejercicio32() {
+
+  Funtion Ejercicio29(){
+    // . Hacer un algoritmo en javascript para calcular la suma de los primeros cien números con un ciclo repetir
+    var suma=0;
+    do{
+    var números=prompt("digita los números a sumar");
+    if(number(numeros)==numeros){
+    números=number(numeros);
+    suma=suma+numeros;
+    }
+    else{
+    if(numeros !=undefined){
+     alert(numeros + "no es un valor numérico válido");
+    }
+          } 
+      } while(numeros!=undefined);
+    }
+    
+    Funtion Ejercicio30(){
+      // . Hacer un algoritmo en Pseint para calcular la suma de los primeros cien números con un ciclo mientras
+      let i=1,suma=0;
+      while(i<=100){
+      document.write(i+”<br>);
+      suma +=i;
+      i++;
+      }
+      document.write(“La suma de los numeros es:”+suma);
+      }
+      
+
+  function ejercicio31(){
+    
+// Hacer un algoritmo en JavaScript para calcular la suma de los primeros cien números con un ciclo para.
+
+let acumulador=0:
+for(let index=1;index<=100;index++){
+acumulador +=index;
+}
+console.log(sumaenteros());
+  }
+
+  function ejercicio33() {
     /**
      * 32. Se quiere saber cuál es la ciudad
      * con la población de más personas, son tres provincias y
      * once ciudades, hacer un algoritmo en JavaScript que nos permita saber eso.
      */
-    console.log("==========ejercicio 32=================");
+    console.log("==========ejercicio 33=================");
   
     let nombreProvincia, nombreCiudad, ciudadMayorPoblacion;
     let poblacion, mayorPoblacion;
@@ -609,7 +710,25 @@ function numMayor(num1,num2,num3){
       ${mayorPoblacion}
       `);
   }
-  
+
+  function Ejercicio34(){
+    //Hacer un algoritmo en javascript que permita al usuario continuar con el programa.
+      let continuar ;
+      do {
+        continuar=prompt("Desa continua n/s ");
+        continuar= toLowerCase (continuar);
+      } while='n'
+         }
+    
+         Function Ejercicio35(){
+          // Hacer un algoritmo en javascript que imprima la tabla de multiplicar de los números del uno al nueve.
+            let n, i;
+            n=ParseInt(prompt("ingrese el numero de la tabla de multiplicar"));
+            for( i=1; i<=9; i++){
+              console.log( n+ "x"+i+ "="+ n*i);
+            }
+            }
+          
   function ejercicio38() {
     /**38. Hacer un algoritmo en JavaScript que
      *  nos permita saber si un número es un número perfecto. */
